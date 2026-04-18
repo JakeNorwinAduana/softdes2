@@ -1,0 +1,4 @@
+Model,MAPE (%),CV (%),Training Time (s),Model Size (KB),Robustness (Degrad %)
+Design 1: Linear Regression,60.5526,6.4001,0.0404,12.31,105.3077
+Design 2: Random Forest,12.0905,1.8611,0.2487,11553.85,10.6035
+Design 3: Gradient Boosting,29.8364,2.0906,0.3493,143.92,7.2061

@@ -1,0 +1,4 @@
+Model,MAPE (norm),CV (norm),Training Time (norm),Model Size (norm),Robustness (norm),Weighted Score
+Design 1: Linear Regression,1.0,1.0,10.0,10.0,1.0,4.375
+Design 2: Random Forest,10.0,10.0,3.931,1.0,9.6883,7.1644
+Design 3: Gradient Boosting,6.7044,9.5449,1.0,9.8974,10.0,7.2557
