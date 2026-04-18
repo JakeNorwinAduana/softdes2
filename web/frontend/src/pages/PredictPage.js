@@ -95,9 +95,6 @@ export default function PredictPage() {
             <div style={{ color: 'var(--text-secondary)', fontSize: 14, marginTop: 6 }}>
               Range: {formatPHP(result.price_low)} – {formatPHP(result.price_high)}
             </div>
-            <div style={{ marginTop: 16, fontSize: 12, color: 'var(--text-muted)' }}>
-              Gradient Boosting Model · MAPE 29.84% · ±14.92% confidence
-            </div>
           </div>
         )}
       </div>

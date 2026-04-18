@@ -3,8 +3,6 @@ import React, { useState, useEffect } from 'react';
 const links = [
   { id: 'home', label: 'Home' },
   { id: 'predict', label: 'Forecast' },
-  { id: 'analytics', label: 'Analytics' },
-  { id: 'about', label: 'About' },
 ];
 
 export default function Navbar({ current, navigate }) {

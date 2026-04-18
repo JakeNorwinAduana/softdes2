@@ -1,11 +1,5 @@
 import React from 'react';
 
-const stats = [
-  { value: '1,451', label: 'Properties Analyzed' },
-  { value: '29.84%', label: 'MAPE Score' },
-  { value: '2.09%', label: 'CV Stability' },
-  { value: '143 KB', label: 'Model Size' },
-];
 
 const features = [
   {
@@ -44,15 +38,6 @@ export default function HomePage({ navigate }) {
       }}>
         <div style={{ maxWidth: 1200, margin: '0 auto', width: '100%' }}>
           <div style={{ maxWidth: 720, animation: 'fadeUp 0.7s ease' }}>
-            <div style={{
-              display: 'inline-flex', alignItems: 'center', gap: 8,
-              background: 'var(--gold-dim)', border: '1px solid var(--border)',
-              borderRadius: 100, padding: '6px 16px', marginBottom: 32,
-            }}>
-              <span style={{ color: 'var(--gold)', fontSize: 12, fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase' }}>
-                Machine Learning · Capstone 2026
-              </span>
-            </div>
 
             <h1 style={{
               fontFamily: 'var(--font-display)',
@@ -94,45 +79,11 @@ export default function HomePage({ navigate }) {
               >
                 Get Free Estimate →
               </button>
-              <button onClick={() => navigate('analytics')} style={{
-                background: 'transparent',
-                border: '1px solid var(--border)',
-                borderRadius: 12, color: 'var(--text-secondary)',
-                padding: '16px 36px', fontSize: 16,
-                fontFamily: 'var(--font-body)', fontWeight: 400, cursor: 'pointer',
-                transition: 'all 0.2s',
-              }}
-                onMouseEnter={e => { e.currentTarget.style.color = 'var(--text-primary)'; e.currentTarget.style.borderColor = 'var(--gold)'; }}
-                onMouseLeave={e => { e.currentTarget.style.color = 'var(--text-secondary)'; e.currentTarget.style.borderColor = 'var(--border)'; }}
-              >
-                View Market Analytics
-              </button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Stats bar */}
-      <section style={{
-        borderTop: '1px solid var(--border-subtle)',
-        borderBottom: '1px solid var(--border-subtle)',
-        padding: '40px 32px',
-        background: 'var(--surface)',
-        backdropFilter: 'blur(10px)',
-      }}>
-        <div style={{
-          maxWidth: 1200, margin: '0 auto',
-          display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))',
-          gap: 40, textAlign: 'center',
-        }}>
-          {stats.map((s, i) => (
-            <div key={i} style={{ animation: `fadeUp 0.5s ease ${i * 0.1}s both` }}>
-              <div style={{ fontSize: 36, fontFamily: 'var(--font-display)', fontWeight: 800, color: 'var(--gold)', letterSpacing: '-0.02em' }}>{s.value}</div>
-              <div style={{ fontSize: 13, color: 'var(--text-muted)', marginTop: 4, textTransform: 'uppercase', letterSpacing: '0.08em' }}>{s.label}</div>
-            </div>
-          ))}
-        </div>
-      </section>
 
       {/* Features */}
       <section style={{ padding: '100px 32px' }}>
